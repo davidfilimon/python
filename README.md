@@ -28,6 +28,7 @@ Bezier Curve Animation
 Demonstrates the animation of a Bezier curve being drawn, along with its control points.
 
 B-Spline Curve Animation
+![B-Spline Curve](graphs/images/bspine_gif.gif)
 Illustrates the animation of a B-Spline curve, highlighting its smooth interpolation.
 
 GIFs
