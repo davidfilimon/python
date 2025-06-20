@@ -24,7 +24,7 @@ Home Page
 A welcoming screen to navigate through the application's features.
 
 Bezier Curve Animation
-[!Bezier Curve](graphs/images/bezier_gif.gif)
+![Bezier Curve](graphs/images/bezier_gif.gif)
 Demonstrates the animation of a Bezier curve being drawn, along with its control points.
 
 B-Spline Curve Animation
