@@ -1,74 +1,133 @@
-Curve Animator: Bezier and B-Spline Visualizer
-Overview
-Welcome to Curve Animator, a powerful and intuitive desktop application built with Python, PySide6, Matplotlib, and NumPy. It's designed to visualize Bezier and B-Spline curves, providing an interactive platform to understand how these fundamental computer graphics curves are constructed based on control points. Whether you're a student, a researcher, or just curious about computational geometry, Curve Animator offers clear and animated insights into these fascinating mathematical concepts.
+# 🎨 Curve Animator: Bezier and B-Spline Visualizer
 
-Key Features
-Interactive Control Point Management: Easily add and reset control points manually or import them from a file.
-Multiple Bezier Curve Types:
-Quadratic Bezier: Visualize curves defined by 3 control points.
-Cubic Bezier: Explore curves shaped by 4 control points.
-General Bezier: Understand how Bezier curves are constructed with an arbitrary number of control points using de Casteljau's algorithm (or its equivalent sum formula).
-B-Spline Curve Visualization: Generate and animate B-Spline curves, showcasing their local control property and smoothness.
-Real-time Animation: Observe the dynamic construction of curves as t varies from 0 to 1, providing a vivid understanding of their parametric nature.
-Clear Visualizations: Matplotlib integration ensures high-quality plots of control points and the resulting curves.
-User-Friendly Interface: A clean and easy-to-navigate interface built with PySide6.
-File Import: Load control points from a text file (e.g., points.txt), with each line containing x,y coordinates, for quick setup and experimentation.
-Why Use Curve Animator?
-Educational Tool: Perfect for students learning about computer graphics, computational geometry, or numerical methods.
-Quick Experimentation: Rapidly test different sets of control points and observe their impact on curve shapes.
-Visual Understanding: Go beyond static images and truly grasp the dynamic process of curve generation.
-Screenshots
-Home Page
-Insert a screenshot of the home page, showing a welcoming screen and navigation options.
-
-Bezier Curve Animation
-Demonstrates the animation of a Bezier curve being drawn, along with its control points.
 ![Bezier Curve](graphs/images/bezier_gif.gif)
 
-B-Spline Curve Animation
-Illustrates the animation of a B-Spline curve, highlighting its smooth interpolation.
+> **Curve Animator** is a powerful and intuitive desktop application built with **Python**, **PySide6**, **Matplotlib**, and **NumPy**. It allows you to visualize and animate Bezier and B-Spline curves interactively, providing a hands-on understanding of how these curves are constructed.
+
+---
+
+## 📚 Overview
+
+Curve Animator is designed for students, researchers, and anyone curious about computational geometry and computer graphics. It makes it easy to explore how Bezier and B-Spline curves behave by visualizing them in real time as you manipulate their control points.
+
+---
+
+## 🚀 Features
+
+* 🎯 **Interactive Control Point Management**
+
+  * Add points manually or import from a `.txt` file
+  * Reset control points with a single click
+
+* 📊 **Bezier Curve Visualization**
+
+  * **Quadratic Bezier** (3 control points)
+  * **Cubic Bezier** (4 control points)
+  * **General Bezier** with any number of points using de Casteljau’s algorithm
+
+* 🔀 **B-Spline Curve Visualization**
+
+  * Smooth, local control and animation of B-Spline curves
+
+* ⏱️ **Real-Time Animation**
+
+  * Watch the curve being drawn step-by-step as `t` varies from 0 to 1
+
+* 📊 **High-Quality Plots**
+
+  * Rendered with Matplotlib for clarity and precision
+
+* 🧽 **User-Friendly Interface**
+
+  * Built with PySide6 for a modern, intuitive UI
+
+* 📁 **File Import Support**
+
+  * Load control points from a text file: each line should contain `x,y`
+
+---
+
+## 💡 Why Use Curve Animator?
+
+* 🧑‍🏫 **Educational Tool** — Great for learning computer graphics or numerical methods
+* 🧪 **Experiment Freely** — Quickly test control point setups and see curve results instantly
+* 👁️ **Visual Learning** — Truly grasp how curves are constructed, beyond static diagrams
+
+---
+
+## 🖼️ Screenshots & GIFs
+
+### Home Page
+
+*A welcoming interface with navigation options*
+
+![Bezier Page](graphs/images/bezier_interface.png)
+![B-Spline Page](graphs/images/bspline_interface.png)
+
+---
+
+### ✏️ Bezier Curve Animation
+
+![Bezier Curve](graphs/images/bezier_gif.gif)
+
+---
+
+### 🧵 B-Spline Curve Animation
+
 ![B-Spline Curve](graphs/images/bspline_gif.gif)
 
-GIFs
-Adding Points and Drawing a Bezier Curve
+---
 
-B-Spline Animation in Action
-Insert a dynamic demonstration (GIF) of a B-Spline curve being generated.
+## 🛠 Installation
 
-Installation
-To run this application, you'll need Python and the following libraries:
+Make sure you have Python installed, then install the required libraries:
 
-PySide6
-matplotlib
-numpy
-scipy
-You can install them using pip:
-
-Bash
-
+```bash
 pip install PySide6 matplotlib numpy scipy
-Usage
-Run the application:
+```
 
-Bash
+---
 
+## ▶️ Usage
+
+To run the application:
+
+```bash
 python main.py
-(Assuming your main application file is named main.py and it imports the other classes)
+```
 
-Navigate: Use the "Home," "Bezier," and "B-Spline" buttons to switch between sections.
+> Assuming your main file is `main.py` and it integrates the other modules.
 
-Add Points:
+### 🧱 Navigation
 
-On the Bezier or B-Spline pages, you can manually enter coordinates (e.g., 10,20) into the input field and click "Add Point."
-Alternatively, click "Import from File" to load points from a text file, with each line containing x,y coordinates.
-Select Bezier Type (Bezier Page only): Choose "Quadratic," "Cubic," or "General" from the dropdown menu to specify the type of Bezier curve you want to animate.
+* Use the buttons **Home**, **Bezier**, and **B-Spline** to switch sections.
 
-Draw/Animate: Click the "Draw" button to start the animation of the selected curve type with the currently defined control points.
+### ➕ Add Control Points
 
-Reset: Click "Reset" to clear all control points and the displayed curve.
+* Manually: Enter coordinates (e.g., `10,20`) and click **Add Point**
+* From file: Click **Import from File** and use a `.txt` file with lines like `x,y`
 
-Code Structure
-main.py: The main application file, handling the PySide6 UI and integrating the animation classes.
-bezier_animation.py: Contains the BezierAnimation class, responsible for calculating and animating Bezier curves (quadratic, cubic, and general).
-bspline_animation.py: Contains the BSplineAnimation class, handling the calculation and animation of B-Spline curves.
-ui_Calcul_Numeric.py: (Assumed to be generated by pyside6-uic) Defines the UI elements for the application.
+### 🧹 Bezier Curve Type
+
+* On the Bezier page, choose **Quadratic**, **Cubic**, or **General** from the dropdown
+
+### 🎮 Animate the Curve
+
+* Click **Draw** to start the animation
+* Click **Reset** to clear all points and the canvas
+
+---
+
+## 📓 Code Structure
+
+```text
+🔹 main.py                # Launches the PySide6 app and UI
+🔹 bezier_animation.py    # Contains logic for Bezier curves (quadratic, cubic, general)
+🔹 bspline_animation.py   # Contains logic for B-Spline curves
+🔹 ui_Calcul_Numeric.py   # UI layout (generated via pyside6-uic)
+🔹 coordonate.txt         # Example of coordinates
+🔹 graphs/
+    └── images/            # Contains GIFs and screenshots for README
+```
+
+---
