@@ -8,7 +8,7 @@
 
 ## 📚 Overview
 
-Curve Animator is designed for students, researchers, and anyone curious about computational geometry and computer graphics. It makes it easy to explore how Bezier and B-Spline curves behave by visualizing them in real time as you manipulate their control points.
+Curve Animator makes it easy to explore how Bezier and B-Spline curves behave by visualizing them in real time as you manipulate their control points.
 
 ---
 
