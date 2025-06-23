@@ -47,14 +47,6 @@ Curve Animator makes it easy to explore how Bezier and B-Spline curves behave by
 
 ---
 
-## 💡 Why Use Curve Animator?
-
-* 🧑‍🏫 **Educational Tool** — Great for learning computer graphics or numerical methods
-* 🧪 **Experiment Freely** — Quickly test control point setups and see curve results instantly
-* 👁️ **Visual Learning** — Truly grasp how curves are constructed, beyond static diagrams
-
----
-
 ## 🖼️ Screenshots & GIFs
 
 ### Home Page
